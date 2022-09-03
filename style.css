@@ -4,11 +4,10 @@
   padding: 0;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
-.wrapper {
-}
+
 .container {
   width: 80%;
   margin: auto;
@@ -148,8 +147,7 @@ article {
   margin-right: 2rem;
 }
 
-
-.card-list > div{
+.card-list > div {
   display: flex;
 }
 
@@ -183,10 +181,6 @@ article button:hover {
   margin: 10px;
 }
 
- img {
-  
-}
-
 .subscription {
   display: flex;
   align-items: center;
@@ -210,9 +204,7 @@ a {
   text-decoration: none;
 }
 
-
-@media (max-width: 768px)
-{
+@media (max-width: 768px) {
   .main {
     margin-top: 32px;
     display: flex;
@@ -220,47 +212,38 @@ a {
     /* this makes the article noT aligned */
     /* justify-content: space-between;
       align-items: center; */
-      width: 100%;
-  }
-
-
-  .main-content{
     width: 100%;
   }
 
+  .main-content {
+    width: 100%;
+  }
 
   .side-links {
     width: 100%;
     display: flex;
-    
-
-    
   }
 
-  .card-list{
+  .card-list {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  @media (max-width: 550px) {
+    .card-list > div {
+      display: flex;
+      flex-direction: column;
+    }
 
-@media (max-width: 550px ){
+    article {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
 
-  .card-list > div {
-    display: flex;
-    flex-direction: column;
+    .side-links {
+      flex-direction: column;
+    }
   }
-
-  article {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-
-
-  .side-links{
-
-    flex-direction: column;
-  }
-
 }
