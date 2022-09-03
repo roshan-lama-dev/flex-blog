@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.wrapper {
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* global message */
+.global-msg {
+  background: rgb(245, 245, 252);
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+
+  /* color: beige; */
+}
+
+.gbl-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  background: rgb(231, 229, 229);
+  color: rgb(2, 7, 12);
+  font-size: 25px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin-left: 20px;
+}
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: red;
+}
+
+a {
+  color: black;
+}
+
+/* hero section */
+.hero {
+  background: url(img/background.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.26);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  width: 450px;
+  backdrop-filter: blur(3px);
+  padding: 10px 20px;
+  border-radius: 10px;
+  /*  */
+  box-shadow: 5px 10px 10px black;
+}
+
+.main {
+  margin-top: 32px;
+  display: flex;
+  /* this makes the article noT aligned */
+  /* justify-content: space-between;
+    align-items: center; */
+}
+
+.main-content {
+  margin-right: 20px;
+  width: 66%;
+}
+
+article {
+  padding: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.btn-box {
+  margin-top: 10px;
+}
+/* button{
+    float: right;
+} */
+
+.art-img {
+  width: 300px;
+  margin-right: 1rem;
+}
+
+article {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.para-div {
+  margin-top: 20px;
+}
+
+.side-links {
+  width: 34%;
+  margin-left: 20px;
+}
+
+.read-by-country,
+.read-by-date {
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+/* recommendation secion */
+.recc {
+  background: linear-gradient(rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.308));
+  padding: 2rem;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+
+  margin-right: 2rem;
+}
+
+
+.card-list > div{
+  display: flex;
+}
+
+.card button,
+article button {
+  font-size: 18px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.card button {
+  width: 100%;
+}
+
+.card button:hover {
+  cursor: pointer;
+  zoom: 1.2;
+}
+article button:hover {
+  cursor: pointer;
+  zoom: 1.2;
+}
+
+.card {
+  width: 300px;
+  background: rgba(233, 227, 227, 0.171);
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  min-height: 300px;
+  margin: 10px;
+}
+
+ img {
+  
+}
+
+.subscription {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px, 0;
+}
+
+/* footer section */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 10px;
+}
+
+.navbar.container {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+}
+
+
+@media (max-width: 768px)
+{
+  .main {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    /* this makes the article noT aligned */
+    /* justify-content: space-between;
+      align-items: center; */
+      width: 100%;
+  }
+
+
+  .main-content{
+    width: 100%;
+  }
+
+
+  .side-links {
+    width: 100%;
+    display: flex;
+    
+
+    
+  }
+
+  .card-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+@media (max-width: 550px ){
+
+  .card-list > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+
+  .side-links{
+
+    flex-direction: column;
+  }
+
+}
